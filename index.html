@@ -1,1 +1,53 @@
-ss
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nos Casamos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script>
+    UPLOADCARE_LOCALE = "es";
+  </script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+
+  </head>
+<body>
+  <div class="container_title">
+      <img class="icon" id="bride" src="./img/bride.png" alt="bride">
+      <h1 class="title">&iexcl;Leonor & Ezequiel!</h1>
+      <img class="icon" id="groom" src="./img/groom.png" alt="groom">
+  </div>
+  <h2 class="subtitle">Nos casamos, compartí tu recuerdo</h2>
+   <form
+    class="form"
+    method="POST" 
+    enctype="multipart/form-data" 
+    onsubmit="uploadImage(event)" 
+    id="imageForm"
+    name="imageForm"
+  >
+  <div class="image">
+  <input
+  data-tabs="file"
+  data-locale="es"
+  data-name="image"
+  data-images-only="true"
+  data-public-key="da7189a159abe1a7e2ee"
+  data-preview-step="true"
+  data-clearable="true"
+  id="imageInput"
+  type="hidden"
+  role="uploadcare-uploader"
+  name="image"
+/>
+  </div>
+  <input 
+    class="submit"
+    type="submit" 
+    value="Subir imagen">
+  </form>
+  <div class="alert-container"></div>
+  <script src="script.js"></script>
+  <div id="gallery"></div>
+</body>
+</html>
