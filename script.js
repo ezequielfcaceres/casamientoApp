@@ -12,8 +12,8 @@ async function uploadImage(event) {
     console.log("Imagen a cargar",imageUrl)
 
     const response = await fetch(
-      // 'https://casamiento-production-e973.up.railway.app/upload'
-      'http://localhost:3000/upload'
+      'https://casamientoapp-production.up.railway.app/upload'
+      // 'http://localhost:3000/upload'
       , {
         method: 'POST',
         headers: {
@@ -54,8 +54,8 @@ if (response.ok) {
 
   function getImages() {
     fetch(
-      // 'https://casamiento-production-e973.up.railway.app/upload'
-      'http://localhost:3000/upload'
+      'https://casamientoapp-production.up.railway.app/upload'
+      // 'http://localhost:3000/upload'
       , {
       method: 'GET'
     })
